@@ -1,0 +1,17 @@
+.card-title{
+    cursor: pointer;
+}
+
+.card-title:hover{
+    color: gray; 
+    text-decoration-line: underline ;
+    
+}
+
+.card{
+    background-color: bisque;
+    color: black;
+    border:1px  rgb(113, 174, 243);
+    border-style: groove;
+    
+}
