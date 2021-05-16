@@ -15,3 +15,14 @@
     border-style: groove;
     
 }
+
+.quotes{
+    margin-top: 100px;
+    color: black;
+    display: inline-flexbox;
+}
+
+.container{
+    width: 80%;
+}
+
