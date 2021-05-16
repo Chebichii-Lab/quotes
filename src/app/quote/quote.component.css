@@ -9,7 +9,7 @@
 }
 
 .card{
-    background-color: #14213d;
+    background-color: #2e436e;
     color: black;
     border:1px  #fca311;
     border-style: groove;
@@ -26,6 +26,9 @@
     width: 80%;
 }
 
+body{
+    background-color: #000000;
+}
 
 h4{
     font-size: 50px;
