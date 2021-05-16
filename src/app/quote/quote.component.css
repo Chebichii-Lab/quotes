@@ -3,15 +3,15 @@
 }
 
 .card-title:hover{
-    color: gray; 
+    color: white;
     text-decoration-line: underline ;
     
 }
 
 .card{
-    background-color: bisque;
+    background-color: #1f3669;
     color: black;
-    border:1px  rgb(113, 174, 243);
+    border:1px  #fca311;
     border-style: groove;
     
 }
@@ -26,3 +26,10 @@
     width: 80%;
 }
 
+body{
+    background-color: #000000;
+}
+
+h4{
+    font-size: 50px;
+}

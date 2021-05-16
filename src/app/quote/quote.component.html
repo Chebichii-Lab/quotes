@@ -9,14 +9,19 @@
     </nav>
     <div class="quotes">
         <div class="container">
-            <h4 class="text-center">Natasha's World of Inspiration</h4>
+            <h4 class="text-center">Natasha's Inspiration</h4>
 
             <div class="card-columns">
                 <div class="card" *ngFor="let quote of quotes;let i=index">
-
+                    
                     
                     <div class="card-body">
-                        <h5 class="card-title"(click)='toggleDetails(i)'>{{quote.id}} <br><i class="fas  fa-quote-left    "></i> <br><br>{{quote.quote}}  </h5>
+                        <h5 class="card-title"(click)='toggleDetails(i)'>{{quote.id}} <br><i class="fas  fa-quote-left    "></i> <br><div id = {{i}} class="header">
+                            <h5 *ngIf='quote.upvote !== findMax() || quote.upvote === 0'>{{ quote.quote}}.</h5>
+                            <div *ngIf='quote.upvote === findMax() && quote.upvote > 0'>
+                                <h5 appHighlight>{{ quote.quote}}</h5>
+                            </div>
+                          </div><br></h5>
                         
                         <div class="card-text"*ngIf="quote.showQuoteDetails">
                             <p><i class="far fa-thumbs-up    " (click)='upvoteFunc(i)'></i>  <i style="text-indent: 2em;" (click)='downvoteFunc(i)' class="far fa-thumbs-down    "></i></p>

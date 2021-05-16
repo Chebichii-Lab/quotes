@@ -13,10 +13,12 @@
                           <span aria-hidden="true">&times;</span>
                       </button>
               </div> -->
+              <h3 style="color: white;">Add Quote</h3>
               <form (ngSubmit)="onSubmit(form)" #form="ngForm">
   
                   <div class="modal-body">
                       <div class="form-group">
+                          
                         <label for="">Name</label>
                         <input type="text" name="userName" id="userName" class="form-control" placeholder="Please input your name..." required #userName='ngModel' [(ngModel)]="newQuote.userName">
                         <div [hidden]="userName.value||userName.pristine" class="alert alert-danger">
@@ -47,7 +49,6 @@
                 
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary rounded-pill" data-dismiss="modal">Close</button>
                     <button type="submit" class="btn btn-success rounded-pill">ADD</button>
                 </div>
             </form>
