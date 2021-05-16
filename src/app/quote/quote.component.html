@@ -13,6 +13,7 @@
 
             <div class="card-columns">
                 <div class="card" *ngFor="let quote of quotes;let i=index">
+
                     
                     <div class="card-body">
                         <h5 class="card-title"(click)='toggleDetails(i)'>{{quote.id}} <br><i class="fas  fa-quote-left    "></i> <br><br>{{quote.quote}}  </h5>
