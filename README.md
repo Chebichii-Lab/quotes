@@ -31,3 +31,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 2. JavaScript
 3. CSS
 4. TypeScript
+5. Angular CLI
+6. GIT
